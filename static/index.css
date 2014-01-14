@@ -1,0 +1,19 @@
+html {
+    background: #00ffff;
+}
+
+.row {
+    white-space: nowrap;
+}
+
+.pixel {
+    display: inline-block;
+    width: 33px;
+    height: 15px;
+}
+
+.crab {
+    background-image: url('/static/crab.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/static/index.css" />
+  </head>
+  <body>
+    {% for word in words %}
+      <div class="word">
+        {% for row in word %}
+        {% for _ in range(2) %}{# double each row since the crabs are half-high #}
+        <div class="row">
+          {% for pixel in row %}
+            <span class="pixel{% if pixel %} crab{% endif %}"></span>
+          {% endfor %}
+        </div>
+        {% endfor %}
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </body>
+</html>
